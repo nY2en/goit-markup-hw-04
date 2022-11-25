@@ -93,6 +93,9 @@ p {
     display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
+
+    max-width: 100%;
+    max-height: 100%;
 }
 /* текуща сторінка */
 .site-nav .links.current {
@@ -112,6 +115,21 @@ p {
 .connect-with-us .links:focus {
     color: var(--accent);
 }
+/* іконки */
+.connect-with-us .icon { 
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+.icon.mail { 
+    width: 16px;
+    height: 12px;
+}
+
+.icon.tel { 
+    width: 10px;
+    height: 12px;
+}
 
 header {
     border-bottom: 1px solid var(--header-border-color);
@@ -120,19 +138,23 @@ header {
 .header-flex,
 .nav,
 .site-nav,
-.connect-with-us { 
+.connect-with-us,
+.connect-with-us .item,
+.connect-with-us a{ 
     display: flex;  
     align-items: center;
 }
 
 .site-nav > .item:not(:last-child),
 .connect-with-us > .item:not(:last-child) {
-    margin-right: 50px;
+    margin-right: 30px;
 }
 
 .connect-with-us {
     margin-left: auto;
 }
+
+
 
 /* МЕЙН index.html */
 
