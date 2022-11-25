@@ -20,6 +20,7 @@
     --button-portfolio-shadow-alpha-apha-zerozero-eight: rgba(0, 0, 0, 0.08);
     --button-portfolio-shadow-alpha-zero-twelve: rgba(0, 0, 0, 0.12);
     --social-networks-icons-color: #AFB1B8;
+    --footer-join-us-icons-background: rgba(255, 255, 255, 0.1);
 }   
 
 body {
@@ -389,9 +390,12 @@ header {
     display: inline-flex;
 }
 
-.item .thumb > .item > .item2 {
+.item .thumb > .item > .link {
+    display: inline-flex;
     padding: 12px;
     color: inherit;
+    align-items: center;
+    justify-content: center;
 }
 
 .team .thumb > .item:not(:last-child) {
@@ -401,8 +405,8 @@ header {
     fill: currentColor;
 }
 
-.team .thumb .item2:hover,
-.team .thumb .item2:focus {
+.team .thumb .link:hover,
+.team .thumb .link:focus {
     color: var(--white);
     height: 44px;
     width: 44px;
@@ -542,7 +546,15 @@ footer {
     padding-bottom: 60px;
 }
 
-.footer-flex > a {
+.footer-flex {
+    display: flex;
+}
+
+.street{
+    display: flex;
+    flex-direction: column;
+}
+.street > a {
     margin-right: 0px;
     padding: 0px;
 }
@@ -557,4 +569,65 @@ address {
 
 .contact-with-us > .item:not(:last-child) {
     margin-bottom: 9px;
+}
+/* приєднуйся */
+
+
+.join-us {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+    padding-top: 12px;
+    padding-bottom: 40px;
+    
+}
+
+.qualitie-title.white { 
+    color: var(--white);
+    margin-bottom: 20px;
+    display: inline-flex;
+}
+/* іконки */
+.icons-join-us .thumb{
+    display: flex;
+    justify-content: center;
+}
+.icons-join-us .icon {
+    width: 20px;
+    height: 20px;
+}
+
+.icons-join-us .item {
+    color: var(--white);
+    display: inline-flex;
+}
+
+.icons-join-us .link {
+    display:flex;
+    padding: 12px;
+    color: inherit;
+    width: 44px;
+    height: 44px;
+    background-color: var(--footer-join-us-icons-background);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons-join-us .item:not(:last-child) {
+    margin-right: 10px;
+}
+.icons-join-us .icon {
+    fill: currentColor;
+}
+
+.icons-join-us .thumb .link:hover,
+.icons-join-us .thumb .link:focus {
+    height: 44px;
+    width: 44px;
+    background-color: var(--accent);
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
