@@ -159,6 +159,7 @@ header {
     background-position: center;
     background-size: cover;
 }
+/* Заголовог героя */
 .hero-title {
     color: var(--white);
    
@@ -171,11 +172,10 @@ header {
 
     margin-bottom: 30px;
 }
-
+/* Ширина блоку героя */
 .hero-flex {
     width: 696px;
 }
-
 /* Кнопка Замовити послуги */
 .button {
     background-color: var(--accent);
@@ -246,7 +246,6 @@ header {
 
     margin-bottom: 10px;
 }
-
 /* Позиціювання якостей */
 .qualities-flex { 
     display: flex;
