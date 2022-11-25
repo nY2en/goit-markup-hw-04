@@ -19,6 +19,7 @@
     --button-portfolio-shadow-alpha-zero-one: rgba(0, 0, 0, 0.1);
     --button-portfolio-shadow-alpha-apha-zerozero-eight: rgba(0, 0, 0, 0.08);
     --button-portfolio-shadow-alpha-zero-twelve: rgba(0, 0, 0, 0.12);
+    --social-networks-icons-color: #AFB1B8;
 }   
 
 body {
@@ -245,7 +246,7 @@ header {
 
 /* Головні якості */
 /* скритий заголовок */
-.section-title.hidden {
+.hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -349,6 +350,7 @@ header {
     text-align: center;
 
     margin-top: 10px;
+    margin-bottom: 16px;
 }
 
 .team-flex { 
@@ -369,6 +371,46 @@ header {
 
 
     padding-bottom: 30px;
+}
+
+/* іконки */
+.team .thumb{
+    display: flex;
+    justify-content: center;
+}
+.team .icon {
+
+    width: 20px;
+    height: 20px;
+}
+
+.team .thumb > .item {
+    color: var(--social-networks-icons-color);
+    display: inline-flex;
+}
+
+.item .thumb > .item > .item2 {
+    padding: 12px;
+    color: inherit;
+}
+
+.team .thumb > .item:not(:last-child) {
+    margin-right: 10px;
+}
+.team-flex .icon {
+    fill: currentColor;
+}
+
+.team .thumb .item2:hover,
+.team .thumb .item2:focus {
+    color: var(--white);
+    height: 44px;
+    width: 44px;
+    background-color: var(--accent);
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 
@@ -395,6 +437,8 @@ header {
     padding-bottom: 6px;
     padding-left: 22px;
 }
+
+
 /* Ховер */
 .radio-button:hover,
 .radio-button:focus {
