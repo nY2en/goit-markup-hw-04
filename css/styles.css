@@ -445,6 +445,10 @@ header {
     fill: currentColor;
 }
 
+.clients .icon:hover,
+.clients .icon:focus {
+    fill: var(--accent);
+}
 /* МЕЙН portfolio.html */
 
 /* кнопки фільтру */
