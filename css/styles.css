@@ -130,7 +130,7 @@ p {
 
 .icon.tel { 
     width: 10px;
-    height: 12px;
+    height: 16px;
 }
 
 header {
@@ -374,48 +374,40 @@ header {
 }
 
 /* іконки */
-.team .thumb{
+.icons-team {
     display: flex;
     justify-content: center;
 }
-.team .icon {
 
-    width: 20px;
-    height: 20px;
-}
-
-.team .thumb > .item {
-    color: var(--social-networks-icons-color);
-    display: inline-flex;
-}
-
-.item .thumb > .item > .link {
-    display: inline-flex;
-    padding: 12px;
+.icons-team .link {
+    
     color: inherit;
-    align-items: center;
+
+    width: 44px;
+    height: 44px;
+
+    display: flex;
     justify-content: center;
+    align-items: center;
+    
+    border-radius: 50%;
 }
 
-.team .thumb > .item:not(:last-child) {
+.icons-team .item:not(:last-child) {
     margin-right: 10px;
 }
-.team-flex .icon {
+
+.icons-team .icon {
+    width: 20px;
+    height: 20px;
     fill: currentColor;
 }
 
-.team .thumb .link:hover,
-.team .thumb .link:focus {
+.icons-team .link:hover,
+.icons-team .link:focus {
     color: var(--white);
-    height: 44px;
-    width: 44px;
     background-color: var(--accent);
-    border-radius: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
 }
-
 
 /* Постійни клієнти */
 .clients {
@@ -627,45 +619,39 @@ address {
     display: inline-flex;
 }
 /* іконки */
-.icons-join-us .thumb{
+
+.icons-join-us {
     display: flex;
     justify-content: center;
 }
-.icons-join-us .icon {
-    width: 20px;
-    height: 20px;
-}
 
 .icons-join-us .link {
+    
     color: var(--white);
-    display: inline-flex;
-}
+    background-color: var(--footer-join-us-icons-background);
 
-.icons-join-us .link {
-    display:flex;
-    padding: 12px;
     width: 44px;
     height: 44px;
-    background-color: var(--footer-join-us-icons-background);
-    border-radius: 50%;
+
+    display: flex;
     justify-content: center;
     align-items: center;
+    
+    border-radius: 50%;
 }
 
 .icons-join-us .item:not(:last-child) {
     margin-right: 10px;
 }
+
 .icons-join-us .icon {
+    width: 20px;
+    height: 20px;
     fill: currentColor;
 }
 
-.icons-join-us .thumb .link:hover,
-.icons-join-us .thumb .link:focus {
-    height: 44px;
-    width: 44px;
+.icons-join-us .link:hover,
+.icons-join-us .link:focus {
+    color: var(--white);
     background-color: var(--accent);
-    border-radius: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
 }
