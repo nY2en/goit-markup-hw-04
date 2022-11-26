@@ -416,8 +416,10 @@ header {
 .clients-flex {
     display: flex;
 }
-.clients .thumb {
+.clients .link {
     
+    color: var(--social-networks-icons-color);
+
     width: 170px;
     height: 92px;
     border: 1px solid var(--social-networks-icons-color);
@@ -428,8 +430,8 @@ header {
     align-items: center;
 }
 
-.clients .thumb:hover,
-.clients .thumb:focus {
+.clients .link:hover,
+.clients .link:focus {
     border: 1px solid var(--accent);
 }
 
@@ -437,12 +439,7 @@ header {
     margin-right: 30px;
 }
 
-.clients a {
-    color: var(--social-networks-icons-color);
-}
-
 .clients .icon{
-    display: flex;
     width: 106px;
     height: 60px;
     fill: currentColor;
@@ -581,6 +578,7 @@ footer {
 
 .footer-flex {
     display: flex;
+    align-items: baseline;
 }
 
 .street{
@@ -603,23 +601,18 @@ address {
 .contact-with-us > .item:not(:last-child) {
     margin-bottom: 9px;
 }
+
 /* приєднуйся */
 .join-us {
-    display: flex;
-    flex-direction: column;
     margin-left: 70px;
-    padding-top: 12px;
-    padding-bottom: 40px;
-    
 }
 
 .qualitie-title.white { 
     color: var(--white);
     margin-bottom: 20px;
-    display: inline-flex;
 }
-/* іконки */
 
+/* іконки */
 .icons-join-us {
     display: flex;
     justify-content: center;
