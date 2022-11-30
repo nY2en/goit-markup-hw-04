@@ -445,8 +445,8 @@ header {
     fill: currentColor;
 }
 
-.clients .icon:hover,
-.clients .icon:focus {
+.clients .item:hover .icon,
+.clients .item:focus .icon {
     fill: var(--accent);
 }
 /* МЕЙН portfolio.html */
